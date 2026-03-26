@@ -39,9 +39,67 @@ The dataset used in this project is a synthetic dataset created and modified for
 The dataset is included in this repository as `loan_approval_data.csv`.
 ## Exploratory data analysis 
 1.“Applicants with higher income show a slightly greater likelihood of loan approval; however, the overlap between approved and rejected groups suggests that income alone is not a strong deciding factor.”
+
 2. “Credit score shows a strong positive relationship with loan approval, with approved applicants having significantly higher median scores. This indicates that credit score is a key predictor of loan eligibility.”
-3. “Applicants with higher debt-to-income ratios are more likely to be rejected, indicating that higher financial burden negatively impacts loan approval decisions.”
+ 
+ 3. “Applicants with higher debt-to-income ratios are more likely to be rejected, indicating that higher financial burden negatively impacts loan approval decisions.”
+   
 4. “Savings show a moderate influence on loan approval, but the significant overlap suggests it is not a dominant factor compared to credit score or DTI ratio.”
+
 5. “Among the analyzed features, Credit Score and DTI Ratio demonstrate the strongest relationship with loan approval, making them critical predictors. In contrast, Applicant Income and Savings show weaker individual influence, indicating that loan approval decisions are driven more by credit risk and financial stability than income alone.”
+   
 6. “Categorical feature analysis indicates that property area has a noticeable influence on loan approval decisions, with urban applicants showing higher approval tendencies. In contrast, marital status exhibits only a mild impact, suggesting that financial factors may play a more dominant role than demographic attributes.”
+   
 7. The correlation matrix was analyzed to understand relationships between features and the target variable (Loan_Approved). It was observed that Credit_Score has the highest positive correlation (0.45), indicating it is a strong predictor. Income-related features also showed moderate correlation, while most other variables had weak relationships.This suggests that while some features strongly influence the outcome, others may contribute less and require model-based evaluation.The insights from correlation analysis guided feature selection for model training.
+
+## 📊 Model Evaluation
+
+Multiple machine learning models were trained and evaluated to predict loan approval, including Logistic Regression, K-Nearest Neighbors (KNN), and Naive Bayes.
+
+### 🔹 Logistic Regression
+- Accuracy: 87.5%
+- Precision: 0.78
+- Recall: 0.82
+- F1 Score: 0.80
+
+Logistic Regression performed the best among all models, achieving high accuracy along with a balanced precision-recall trade-off. It effectively identifies both approved and rejected loan applications, making it suitable for real-world deployment.
+
+---
+
+### 🔹 K-Nearest Neighbors (KNN)
+- Accuracy: 78%
+- Precision: 0.70
+- Recall: 0.47
+- F1 Score: 0.56
+
+KNN showed lower performance, particularly in recall, indicating that it fails to correctly identify a significant number of approved loan cases.
+
+---
+
+### 🔹 Naive Bayes
+- Accuracy: 87%
+- Precision: 0.78
+- Recall: 0.78
+- F1 Score: 0.78
+
+Naive Bayes performed comparably to Logistic Regression but slightly lower in overall balance.
+
+---
+
+## 🏆 Final Model Selection
+
+Logistic Regression was selected as the final model due to its:
+- High accuracy
+- Balanced performance across precision and recall
+- Better generalization capability
+
+---
+
+## 💡 Business Interpretation
+
+In loan approval systems:
+- False Positives (approving risky applicants) can lead to financial losses
+- False Negatives (rejecting good applicants) can lead to lost business opportunities
+
+The selected model maintains a good balance between these risks, making it reliable for decision-making.
+
