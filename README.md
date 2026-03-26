@@ -37,6 +37,8 @@ Each row in the dataset represents a loan applicant and contains multiple attrib
 ## Dataset Source 
 The dataset used in this project is a synthetic dataset created and modified for educational purposes to simulate real-world loan approval scenarios.
 The dataset is included in this repository as `loan_approval_data.csv`.
+## Missing Handling Values 
+The very first task is to fill these null values which is the part of data cleaning so that proper analysis should be done so with the help of simple imputer we will first fill the different data as per the strategy taken into consoderation as mean and median 
 ## Exploratory data analysis 
 1.“Applicants with higher income show a slightly greater likelihood of loan approval; however, the overlap between approved and rejected groups suggests that income alone is not a strong deciding factor.”
 
@@ -51,6 +53,7 @@ The dataset is included in this repository as `loan_approval_data.csv`.
 6. “Categorical feature analysis indicates that property area has a noticeable influence on loan approval decisions, with urban applicants showing higher approval tendencies. In contrast, marital status exhibits only a mild impact, suggesting that financial factors may play a more dominant role than demographic attributes.”
    
 7. The correlation matrix was analyzed to understand relationships between features and the target variable (Loan_Approved). It was observed that Credit_Score has the highest positive correlation (0.45), indicating it is a strong predictor. Income-related features also showed moderate correlation, while most other variables had weak relationships.This suggests that while some features strongly influence the outcome, others may contribute less and require model-based evaluation.The insights from correlation analysis guided feature selection for model training.
+   
 
 ## 📊 Model Evaluation
 
