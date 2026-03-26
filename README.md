@@ -35,3 +35,5 @@ Each row in the dataset represents a loan applicant and contains multiple attrib
 | Employer_Category   | Govt / Private / Self                            |
 | Loan_Approved       | 1 = Approved, 0 = Rejected                       |
 ## Dataset Source 
+The dataset used in this project is a synthetic dataset created and modified for educational purposes to simulate real-world loan approval scenarios.
+The dataset is included in this repository as `loan_approval_data.csv`.
