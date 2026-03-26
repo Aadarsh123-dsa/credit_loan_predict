@@ -106,3 +106,6 @@ In loan approval systems:
 
 The selected model maintains a good balance between these risks, making it reliable for decision-making.
 
+## Author
+AADARSH BATRA
+25BAI10872
