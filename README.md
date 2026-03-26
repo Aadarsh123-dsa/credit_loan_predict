@@ -37,3 +37,11 @@ Each row in the dataset represents a loan applicant and contains multiple attrib
 ## Dataset Source 
 The dataset used in this project is a synthetic dataset created and modified for educational purposes to simulate real-world loan approval scenarios.
 The dataset is included in this repository as `loan_approval_data.csv`.
+## Exploratory data analysis 
+1.“Applicants with higher income show a slightly greater likelihood of loan approval; however, the overlap between approved and rejected groups suggests that income alone is not a strong deciding factor.”
+2. “Credit score shows a strong positive relationship with loan approval, with approved applicants having significantly higher median scores. This indicates that credit score is a key predictor of loan eligibility.”
+3. “Applicants with higher debt-to-income ratios are more likely to be rejected, indicating that higher financial burden negatively impacts loan approval decisions.”
+4. “Savings show a moderate influence on loan approval, but the significant overlap suggests it is not a dominant factor compared to credit score or DTI ratio.”
+5. “Among the analyzed features, Credit Score and DTI Ratio demonstrate the strongest relationship with loan approval, making them critical predictors. In contrast, Applicant Income and Savings show weaker individual influence, indicating that loan approval decisions are driven more by credit risk and financial stability than income alone.”
+6. “Categorical feature analysis indicates that property area has a noticeable influence on loan approval decisions, with urban applicants showing higher approval tendencies. In contrast, marital status exhibits only a mild impact, suggesting that financial factors may play a more dominant role than demographic attributes.”
+7. The correlation matrix was analyzed to understand relationships between features and the target variable (Loan_Approved). It was observed that Credit_Score has the highest positive correlation (0.45), indicating it is a strong predictor. Income-related features also showed moderate correlation, while most other variables had weak relationships.This suggests that while some features strongly influence the outcome, others may contribute less and require model-based evaluation.The insights from correlation analysis guided feature selection for model training.
